@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { formatTime } from '@/utils/index';
 
 
@@ -6,8 +6,7 @@ import { Decoration6, Decoration8, Decoration10, Decoration11 } from "@jiaminghi
 
 import { TopBox, TimeBox } from './style';
 
-import { title } from '@/config/index'
-
+const tilte = import.meta.env.VITE_GLOB_APP_TITLE
 
 const TopPageIndex = () => {
     const [timeStr, serTimeStr] = useState("")
@@ -31,7 +30,7 @@ const TopPageIndex = () => {
                             color={['#568aea', '#000000']}
                         />
                         <div className='title'>
-                            <Decoration11 className='title-text'>{title}</Decoration11>
+                            <Decoration11 className='title-text'>{tilte}</Decoration11>
                             <Decoration6
                                 className='title-bototm top_decoration6'
                                 reverse={true}
