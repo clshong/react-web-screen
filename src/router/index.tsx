@@ -13,12 +13,12 @@ const routes: RouteObject[] = [
   {
     path: "/login",
     lazy: () =>
-      import("@/views/Login").then((module) => ({ Component: module.default })),
+      import("@/pages/Login").then((module) => ({ Component: module.default })),
   },
   {
     path: "/dashboard",
     lazy: () =>
-      import("@/views/Dashboard").then((module) => ({
+      import("@/pages/Dashboard").then((module) => ({
         Component: module.default,
       })),
   },
